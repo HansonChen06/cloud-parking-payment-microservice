@@ -1,5 +1,7 @@
 # Cloud Parking Payment Microservice
 
+[![CI](https://github.com/HansonChen06/cloud-parking-payment-microservice/actions/workflows/ci.yml/badge.svg)](https://github.com/HansonChen06/cloud-parking-payment-microservice/actions/workflows/ci.yml)
+
 A small backend service for creating parking sessions, tracking payment status, and looking up parking transactions. The project is designed to demonstrate backend API development, automated testing, Docker packaging, CI validation, logging, health checks, and cloud deployment readiness.
 
 ## Why this project
@@ -100,6 +102,8 @@ This service is ready to deploy to AWS using a container-based workflow:
 5. Send container logs to CloudWatch.
 6. Monitor `/health`, API latency, error rates, and payment status transitions.
 
+See [docs/deployment.md](docs/deployment.md) for a more detailed AWS deployment checklist.
+
 Suggested production environment variables:
 
 ```text
@@ -115,6 +119,8 @@ LOG_LEVEL=INFO
 - Structured JSON logs for easier searching in CloudWatch or another log platform.
 - Input validation with clear API errors.
 - Automated tests for core workflows and failure cases.
+
+See [docs/test-plan.md](docs/test-plan.md) for acceptance criteria and test coverage.
 
 ## Architecture
 
